@@ -1,4 +1,4 @@
-package session_3_java_operators;
+package session_3_java_operators.practice;
 
 //ctrl+D - duplicate line
 //ctrl+y - delete line
