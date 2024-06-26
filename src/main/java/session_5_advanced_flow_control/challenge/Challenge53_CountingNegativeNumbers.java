@@ -16,31 +16,33 @@ public class Challenge53_CountingNegativeNumbers {
     public static void readUserInput() {
         int userArraySize;
         do {
-            Scanner sc = new Scanner(System.in); //Read user input as string
-            System.out.println("Please enter the size of the array: ");
-            int arraySize = sc.nextInt();
+            Scanner arraySizeScan = new Scanner(System.in); //Read user input as string
+            System.out.println("Please enter the size of the array (positive number): ");
+            int arraySize = arraySizeScan.nextInt();
             userArraySize = arraySize;
 
         } while (userArraySize <= 0);
 
         //initialize empty array of known size
         int[] userArray = new int[userArraySize];
-        System.out.println("Created array has: " + userArray.length + " elements");
+        System.out.println("An array with " + userArray.length + " elements has been created");
         System.out.println(Arrays.toString(userArray));
 
+        Scanner arrayElementScan = new Scanner(System.in);
+        System.out.println("Now, please enter " + userArray.length + " elements: ");
 
+        int userInputElements = 0;
+        for (int i = 0; i < userArray.length; i++) {
+            userInputElements = arrayElementScan.nextInt();
+            userArray[i] = userInputElements;
+            System.out.println(Arrays.toString(userArray));
 
-
-        //read user elements and store them in the array
-        //for(int i = 0; i < userArraySize ;i++) {
-
-            // print created list
         }
-
-
+        // +++++ count and print the number of negative elements from the array
     }
+}
 
 
-    //2. main method
-    //3. user input read method
-    //4. count numbers print the number of negative integers in the array
+//2. main method
+//3. user input read method
+//4. count numbers print the number of negative integers in the array

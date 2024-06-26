@@ -14,7 +14,7 @@ public class SwitchStatements {
 
     public static void main(String[] args) {
         printSeason();
-        printGrade();
+        printGrade('A');
         printDayOfWeek();
     }
 
