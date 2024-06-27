@@ -15,7 +15,7 @@ public class Challenge56_WhileLoop {
 
     public static void insistentTerminal() {
         //initialize an empty ArrayList
-        ArrayList<Integer> userHistory = new ArrayList<Integer>();
+        ArrayList<Integer> userHistory = new ArrayList<>();
 
         //initialize Scanner object
         Scanner sc = new Scanner(System.in);
