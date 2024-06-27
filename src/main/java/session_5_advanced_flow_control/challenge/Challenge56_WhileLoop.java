@@ -23,19 +23,7 @@ public class Challenge56_WhileLoop {
 
         int userInput = 0;
         int sum= 0;
-//        do {
-//            if (userInput > 0) {
-//                System.out.println("Please enter a more negative number: ");
-//            } else if (userInput < -1) {
-//                System.out.println("Please enter a less negative number: ");
-//            }
-//            userInput = sc.nextInt();
-//            userHistory.add(userInput);
-//            System.out.println(">> User history: " + userHistory);
-//            sum = sum + userHistory.getLast() ;
-//
-//        } while (userInput != -1);
-//        System.out.println("The sum of all user entered numbers is: " + sum);
+
         while (userInput != -1) {
             if (userInput > 0) {
                 System.out.println("Please enter a more negative number: ");
@@ -45,12 +33,10 @@ public class Challenge56_WhileLoop {
             userInput = sc.nextInt();
             userHistory.add(userInput);
             System.out.println(">> User history: " + userHistory);
-            sum = sum + userHistory.getLast() ;
+            if(userHistory.getLast() != -1) {
+                sum = sum + userHistory.getLast();
+            }
         }
-        System.out.println("The sum of all user entered numbers is: " + sum); // >>> !!! sum includes -1 value --- to be checked
-
-
-
-
+        System.out.println("The sum of all user entered numbers is: " + sum);
     }
 }
