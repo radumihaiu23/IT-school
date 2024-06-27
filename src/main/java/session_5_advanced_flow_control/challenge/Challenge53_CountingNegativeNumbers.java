@@ -1,11 +1,9 @@
 package session_5_advanced_flow_control.challenge;
+import java.util.Arrays;
+import java.util.Scanner;
 
 //3. Counting Negative Numbers
 //Given an array of integers, write a program to count and print the number of negative integers in the array.
-
-
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Challenge53_CountingNegativeNumbers {
     public static void main(String[] args) {
@@ -16,33 +14,28 @@ public class Challenge53_CountingNegativeNumbers {
     public static void readUserInput() {
         int userArraySize;
         do {
-            Scanner arraySizeScan = new Scanner(System.in); //Read user input as string
-            System.out.println("Please enter the size of the array (positive number): ");
+            Scanner arraySizeScan = new Scanner(System.in);                      //read user input as int
+            System.out.println("\n Please enter the size of the array (positive number): ");
             int arraySize = arraySizeScan.nextInt();
             userArraySize = arraySize;
 
         } while (userArraySize <= 0);
 
-        //initialize empty array of known size
-        int[] userArray = new int[userArraySize];
-        System.out.println("An array with " + userArray.length + " elements has been created");
-        System.out.println(Arrays.toString(userArray));
+        int[] userArray = new int[userArraySize];                               //initialize empty array of known size
+        System.out.println("An array with " + userArray.length + " elements has been created: " + Arrays.toString(userArray) );
 
-        Scanner arrayElementScan = new Scanner(System.in);
+        Scanner arrayElementScan = new Scanner(System.in);                      // insert user input in each array slot
         System.out.println("Now, please enter " + userArray.length + " elements: ");
-
         int userInputElements = 0;
+        int negativeInputElement = 0;
         for (int i = 0; i < userArray.length; i++) {
             userInputElements = arrayElementScan.nextInt();
             userArray[i] = userInputElements;
-            System.out.println(Arrays.toString(userArray));
-
+            System.out.println("The array currently contains: " + Arrays.toString(userArray));
+            if (userArray[i] < 0){
+                negativeInputElement = negativeInputElement + 1;
+            }
         }
-        // +++++ count and print the number of negative elements from the array
+        System.out.println("\nUser has introduced: " + negativeInputElement + " negative elements in the array");
     }
 }
-
-
-//2. main method
-//3. user input read method
-//4. count numbers print the number of negative integers in the array
