@@ -22,7 +22,7 @@ public class Challenge511_BreakStatements {
     public static void programLogic() {
         do {
             requestUserNumber();
-            if (userNumber == 0){
+            if (userNumber == 0) {
                 break;
             }
             addNumberToList(userNumber);
@@ -31,28 +31,21 @@ public class Challenge511_BreakStatements {
         System.out.println("Average is: " + average);
     }
 
-    public static int requestUserNumber() {
+    public static void requestUserNumber() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please introduce numbers: ");
         userNumber = sc.nextInt();
-        return userNumber;
     }
 
-    public static ArrayList<Integer> addNumberToList(int number) {
+    public static void addNumberToList(int number) {
         list.add(number);
         System.out.println(list);
-        return list;
     }
 
     public static void calculateAverage(ArrayList listArgument) {
         for (int i = 0; i < list.size(); i++) {
             sum += list.get(i);
-            System.out.println(" sum: " + sum);
         }
         average = (double) sum / list.size();
-        System.out.println(" average: " + average);
-
     }
-
-
 }
