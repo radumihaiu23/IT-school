@@ -23,6 +23,6 @@ public class Challenge61_ReverseString {
         for (int i = characterList.size() - 1; i >= 0; i--) {
             reversedWord = reversedWord + characterList.get(i);
         }
-        System.out.println("The word " + "\"" + userInput + "\" is: " + reversedWord);
+        System.out.println("\" " + userInput + " \" " + "The reversed word  is: " + reversedWord);
     }
 }
