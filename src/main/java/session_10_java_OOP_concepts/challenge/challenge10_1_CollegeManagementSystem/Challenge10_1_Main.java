@@ -1,32 +1,41 @@
 package session_10_java_OOP_concepts.challenge.challenge10_1_CollegeManagementSystem;
 
-/*
-1. College Management System -  Design a system for a college to efficiently manage information about students, professors, and courses:
-Store comprehensive profiles for every student, capturing their first name, last name, sex, age, date of birth, CNP, and address.
-
-Similarly, maintain detailed profiles for every professor, including their first name, last name, sex, age, date of birth, CNP, and address.
-
-The college offers eight distinct courses: Math, Computer Science, Physics, Chemistry, Biology, Geography, English, and History. For each
- course, track details like its schedule, duration, description, and the assigned professor.
-
-Allow for the assignment of a professor to a specific course and ensure the ability to retrieve and view course details, including its
-assigned professor.
-
-Note: Think about the needed classes, attributes and methods. We should master OOP principles and always find a way to transpose the objects
-from real life (or the business domain) to our application, with Java code.
-We should also know to explain the technical decisions we made.
-
- */
-
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.time.LocalDate;
 
 public class Challenge10_1_Main {
 
     public static void main(String[] args) {
-        Student student1 = new Student();
-        Course course1 = new Course("","","","");
-        Professor professor1 = new Professor();
+
+        // create some demo object for each class
+        Student student1 = new Student("Ion", "Popescu", "male", LocalDate.of(2000,
+                06, 05), 123456789, new Address("Victoriei", 19, "Brasov",
+                "Fagaras"));
+
+        Professor professor1 = new Professor("Andrei", "Georgescu", "male",
+                LocalDate.of(1974, 12, 01), 909090909, new Address("Luptei",
+                21, "Mures", "Sighisoara"));
+
+        Course course1 = new Course("8:00 am", "2 hrs", "Introduction");
+
+
+        Student student2 = new Student("Iulia", "Grigore", "Female",
+                LocalDate.of(1999, 01, 21), 321321321, new Address("Fabricii", 87, "Constanta", "Corbu"));
+
+        Professor professor2 = new Professor("Abdul", "Bari", "male",
+                LocalDate.of(1969, 05, 03), 159159159, new Address("Berariei",
+                61, "Vaslui", "Vaslui"));
+
+        Course course2 = new Course("18:00 pm", "1 hr", "Java lesson 1");
+
+
+
+        System.out.println(">>> Student info: \n" + student1 + "\n");
+        System.out.println(">>> Professor info: \n" + professor1 + "\n");
+        System.out.println(">>> Course info: \n" + course1 + "\n");
+
+        System.out.println(">>> Student info: \n" + student2 + "\n");
+        System.out.println(">>> Professor info: \n" + professor2 + "\n");
+        System.out.println(">>> Course info: \n" + course2 + "\n");
 
     }
 }
