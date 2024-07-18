@@ -4,8 +4,8 @@ import java.util.Calendar;
 
 public class Professor {
 
-    private String firstName;
-    private String lastName;
+    private static String firstName = new String();
+    private static String lastName = new String();
     private String gender;
     private LocalDate dateOfBirth;
     private long id;
@@ -40,11 +40,11 @@ public class Professor {
         return allProfessorAttributes;
     }
 
-    public String getFirstName() {
+    public static String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    public static String getLastName() {
         return lastName;
     }
 }
