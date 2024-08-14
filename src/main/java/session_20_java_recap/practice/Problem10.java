@@ -23,5 +23,4 @@ public class Problem10 {
         String diaryContent = diaryMap.get(searchDate);
         System.out.println(diaryContent);
     }
-
 }

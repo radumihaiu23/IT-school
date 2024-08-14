@@ -13,6 +13,6 @@ smallest and largest numbers in the list. Do not use the
 traditional loop-based method for this.
 
 Problem 10
-Create a Diary class that allows users to add entries with 
-date and content. Users should be able to search entries by 
+Create a Diary class that allows users to add entries with
+date and content. Users should be able to search entries by
 date and view a specific entry.

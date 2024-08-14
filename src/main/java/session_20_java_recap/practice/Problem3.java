@@ -17,6 +17,5 @@ public class Problem3 {
 
         Optional<Integer> max = myList.stream().max(Integer::compareTo);
         max.ifPresent(System.out::println);
-
     }
 }

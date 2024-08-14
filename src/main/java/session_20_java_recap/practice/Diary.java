@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Diary {
 
-    private List<Map<LocalDate, String>>  entries;
+    private List<Map<LocalDate, String>> entries;
 
     public Diary(List<Map<LocalDate, String>> entries) {
         this.entries = entries;

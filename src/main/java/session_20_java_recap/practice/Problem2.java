@@ -10,13 +10,12 @@ public class Problem2 {
 
     public static void main(String[] args) {
         int nextYear = Year.now().getValue() + 1;
-        LocalDate date = LocalDate.of(nextYear, 1,1 );
+        LocalDate date = LocalDate.of(nextYear, 1, 1);
         LocalDate firstMonday = date.with(TemporalAdjusters.nextOrSame(DayOfWeek.MONDAY));
-        while (firstMonday.getYear() == nextYear){
+        while (firstMonday.getYear() == nextYear) {
             System.out.println(firstMonday);
             firstMonday = firstMonday.plusWeeks(1);
         }
-
         System.out.println(date);
     }
 }
