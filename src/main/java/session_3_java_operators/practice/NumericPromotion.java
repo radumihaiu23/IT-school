@@ -2,12 +2,10 @@ package session_3_java_operators.practice;
 
 public class NumericPromotion {
     public static void main(String[] args) {
-
-
         short e = 10;
         int f = e + 5;
-
         long a = 10000000000L;
+
         //wrapper classes
         long maxLongValue = Long.MAX_VALUE;
         long minLongValue = Long.MIN_VALUE;
@@ -19,10 +17,10 @@ public class NumericPromotion {
         System.out.println("maxIntValue: " + maxIntValue);
 
         long testLongValue = 123123123123123123L;
-        int newIntValue = (int)testLongValue; //cast
+
+        int newIntValue = (int) testLongValue; //cast
 
         System.out.println("Test long value: " + testLongValue);
         System.out.println("Test new int value: " + newIntValue);
-
     }
 }

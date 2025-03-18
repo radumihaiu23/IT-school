@@ -1,8 +1,5 @@
 package session_3_java_operators.practice;
 
-//ctrl+D - duplicate line
-//ctrl+y - delete line
-
 public class ArithmeticOperators {
     public static void main(String[] args) {
         int firstNumber = 10;
@@ -20,7 +17,8 @@ public class ArithmeticOperators {
         System.out.println("Division of numbers: " + division);
         System.out.println("Reminder of numbers: " + reminder);
 
-
-
+        //ctrl+D - duplicate line
+        //ctrl+y - delete line
+        //sout shortcut
     }
 }

@@ -7,7 +7,7 @@ public class ComplexStreamExample {
 
     public static void main(String[] args) {
 
-        List<String> names = Arrays.asList("John", "Billy", "Alice", "Janice");
+        List<String> names = Arrays.asList("John", "Jack", "Alice");
 
         //filter names that start with "J"
         //make uppercase all names
