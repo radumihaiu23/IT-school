@@ -15,9 +15,9 @@ public class PostIncrementAndPostDecrementOperators {
         System.out.println("w: " + w);
 
         int b = 3;
-        int c = ++b * 5/ b-- + --b; //
-        System.out.println("b is "+ b);
-        System.out.println("c is "+ c);
+        int c = ++b * 5 / b-- + --b; //
+        System.out.println("b is " + b);
+        System.out.println("c is " + c);
     }
 }
 

@@ -9,8 +9,8 @@ public class PreIncrementAndPreDecrementOperators {
         System.out.println("y: " + y);
 
         //pre-decrement operator
-        int z=4;
-        int w= --z;
+        int z = 4;
+        int w = --z;
         System.out.println("z: " + z);
         System.out.println("w: " + w);
     }
